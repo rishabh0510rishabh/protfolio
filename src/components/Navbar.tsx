@@ -67,7 +67,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <motion.a
-            href="https://drive.google.com/file/d/16PF3kSYxZYLrfMn8caMajqBtetnkYq9p/view?usp=drive_link"
+            href="https://drive.google.com/file/d/19KtNhczxbi7Ustmn0k8lDfwU081jYuVp/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-[#4F9CF9]/10 hover:bg-[#4F9CF9]/20 text-[#4F9CF9] border border-[#4F9CF9]/20 hover:border-[#4F9CF9]/50 rounded-lg text-sm font-semibold transition-all"
@@ -110,7 +110,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/16PF3kSYxZYLrfMn8caMajqBtetnkYq9p/view?usp=drive_link"
+                href="https://drive.google.com/file/d/19KtNhczxbi7Ustmn0k8lDfwU081jYuVp/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-[#4F9CF9] font-semibold py-2"
