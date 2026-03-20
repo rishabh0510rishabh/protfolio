@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+build
+.env*
+.git
+.gitignore
+README.md
+LICENSE
+Dockerfile
+.dockerignore
+docker-compose.yml

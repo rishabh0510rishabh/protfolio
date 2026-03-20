@@ -81,7 +81,9 @@ export default function HeroSection() {
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/16PF3kSYxZYLrfMn8caMajqBtetnkYq9p/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-7 py-3.5 glass-card rounded-xl font-bold hover:border-[#4F9CF9]/40"
             >
               <Download size={18} className="text-[#4F9CF9]" /> Resume
