@@ -1,0 +1,166 @@
+Product Requirements Document (PRD)
+Product
+Personal Portfolio Website for Rishabh Mishra
+Product Vision
+Build a modern, high‑performance developer portfolio that presents Rishabh Mishra as an AI‑Augmented
+Full‑Stack Developer  capable of building scalable systems, participating in hackathons, and delivering
+freelance projects. The portfolio should impress recruiters and potential clients within the first few seconds
+and clearly communicate technical capability, project depth, and developer workflow.
+1. Goals
+Primary Goals - Impress recruiters within the first 5 seconds - Increase chances of internship opportunities -
+Attract  freelance  project  inquiries  -  Showcase  real  engineering  work  and  architecture  thinking  -
+Demonstrate AI‑augmented development workflow
+Secondary Goals - Showcase hackathon participation - Display GitHub activity - Provide easy resume access -
+Allow visitors to ask questions through an AI chatbot
+2. Target Audience
+Primary - Tech recruiters - Startup founders - Engineering managers
+Secondary - Developer community - Hackathon judges - Potential collaborators
+3. Core Value Proposition
+"AI‑Augmented Full‑Stack Developer building scalable data‑driven applications and modern web systems."
+Visitors should immediately understand:
+Rishabh builds real systems
+He uses AI tools to improve development productivity
+He participates in hackathons
+He contributes to open source• 
+• 
+• 
+• 
+1
+4. Product Experience Principles
+Design Principles
+Instant clarity Visitors should know who Rishabh is within 3 seconds
+Fast performance Portfolio must load quickly and run smoothly on mobile
+Minimal but impressive Clean UI with subtle animations
+Engineering credibility Show architecture, workflow, and systems thinking
+Interactive developer feel Terminal UI, GitHub activity, AI chatbot
+5. Information Architecture
+Sections
+Hero Section
+About Section
+AI‑Augmented Development Section
+Tech Stack
+Featured Projects
+Hackathon Timeline
+Open Source / GitHub Activity
+Certifications
+Developer Workflow
+AI Chatbot
+Contact Section
+6. Hero Section
+Purpose Create strong first impression.
+Content
+Headline Hi, I'm Rishabh Mishra
+Subheadline AI‑Augmented Full‑Stack Developer1. 
+2. 
+3. 
+4. 
+5. 
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+2
+Description Building scalable full‑stack and data‑driven applications using Python, AI tools, and modern
+web technologies.
+Primary CTA View Projects
+Secondary CTA Download Resume
+Additional CTA GitHub
+Visual Component Subtle animated tech ecosystem:
+Floating icons: Python Database Cloud AI nodes
+Animation must be lightweight.
+Mobile Version Replace 3D with simple animated SVG.
+7. About Section
+Purpose Humanize the developer and explain motivation.
+Content
+Short description
+B.Tech IT student passionate about building scalable systems, participating in hackathons, and solving
+real‑world problems with software and AI technologies.
+Highlight
+Focus areas:
+Full‑Stack Development Machine Learning Data Systems AI‑Augmented Development
+8. AI‑Augmented Development
+Purpose Differentiate portfolio by highlighting AI usage.
+Cards
+AI Assisted Development Using LLM tools to accelerate coding, debugging, and architecture planning.
+3
+Prompt Engineering Designing structured prompts for AI development workflows.
+Data‑Driven Applications Building systems powered by analytics and machine learning.
+Automation Workflows Creating automated pipelines and tools to improve productivity.
+9. Tech Stack Section
+Grouped skill visualization.
+Languages Python JavaScript Java C
+Backend Flask REST APIs RBAC
+Databases SQLite MongoDB
+Data & ML Pandas NumPy Matplotlib Scikit‑learn
+Cloud Google Cloud Platform
+Tools Git Postman Notion
+10. Featured Projects
+Project 1 Railway Ticket Booking System
+Description Flask‑based reservation system with intelligent seat allocation, PDF ticket generation, and QR
+ticket validation.
+Key Features Seat allocation algorithm Role‑based authentication PDF e‑tickets QR codes
+Tech Python Flask SQLite
+Buttons GitHub Architecture
+Project 2 Invoice Generator Dashboard
+Description  Full‑stack  invoice  management  system  with  automated  GST  calculation  and  analytics
+dashboard.
+4
+Features Invoice automation Sales analytics PDF invoices
+Tech Flask Chart.js SQLite
+Buttons GitHub Architecture
+11. Hackathon Section
+Display hackathon timeline.
+Events
+Synapse.AI Hackathon DTU Delhi
+InnovateNSUT NSUT Delhi
+RIFT Hackathon Physics Wallah Innovation
+DataVerse KIET Ghaziabad
+Elite Hack 1.0 Global Hackathon
+Purpose Show builder mindset and competitive participation.
+12. Open Source / GitHub Section
+Features
+Contribution heatmap Top languages Repository highlights
+Purpose Show coding consistency.
+13. Certifications Section
+Display certification cards.
+Examples
+Gen AI Academy Introduction to Large Language Models Google Cloud ML APIs Google Data Cloud
+5
+14. Developer Workflow
+Purpose Show how Rishabh builds software.
+Stages
+Idea Research Architecture Build Deploy
+Include AI tools usage.
+15. Developer Terminal Feature
+Interactive terminal allowing commands:
+whoami skills projects hackathons contact
+16. AI Chatbot
+Floating chatbot assistant.
+Capabilities
+Answer questions about:
+projects skills experience contact
+Implementation RAG chatbot using portfolio data.
+17. Contact Section
+Minimal design.
+Links Email LinkedIn GitHub
+6
+18. Performance Requirements
+Page load < 2 seconds Mobile responsive Lazy load heavy components Disable heavy animations on mobile
+19. Technology Stack
+Frontend Next.js TailwindCSS Framer Motion React Three Fiber
+Backend (optional) Serverless functions
+Deployment Vercel
+Domain rishabhmishra.me
+20. Success Metrics
+Visitors stay > 30 seconds Recruiter engagement Freelance inquiries GitHub profile visits
+21. Future Enhancements
+Blog section Project case studies Interactive architecture diagrams Analytics dashboard
+End of PRD
+7

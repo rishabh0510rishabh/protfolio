@@ -1,0 +1,16 @@
+{
+  "name": "Rishabh Mishra Portfolio",
+  "short_name": "Rishabh",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#0B0F19",
+  "background_color": "#0B0F19",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}

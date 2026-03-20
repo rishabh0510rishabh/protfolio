@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rishabh Mishra | Python Developer &amp; AI Architect</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4F9CF9",
+                        "secondary": "#00FFC6",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0B0F19",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .terminal-shadow { box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .grid-pattern { background-image: radial-gradient(circle, #4F9CF9 1px, transparent 1px); background-size: 30px 30px; opacity: 0.05; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<div class="relative min-h-screen flex flex-col overflow-x-hidden">
+<!-- Background Decorations -->
+<div class="fixed inset-0 grid-pattern pointer-events-none"></div>
+<div class="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="fixed bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-secondary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2 group cursor-pointer">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-background-dark font-black">R</div>
+<span class="font-bold tracking-tight text-xl hidden sm:block">Mishra.dev</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+<a class="hover:text-primary transition-colors" href="#about">About</a>
+<a class="hover:text-primary transition-colors" href="#stack">Stack</a>
+<a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="hover:text-primary transition-colors" href="#hackathons">Hackathons</a>
+<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg text-sm font-semibold transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">description</span> Resume
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto px-6 w-full">
+<!-- Hero Section -->
+<section class="py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+                        Available for New Projects
+                    </div>
+<h1 class="text-5xl lg:text-7xl font-black leading-tight tracking-tighter">
+                        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Rishabh Mishra</span>
+</h1>
+<p class="text-xl text-slate-400 max-w-xl leading-relaxed">
+                        Python Developer building <span class="text-slate-100">Full-Stack</span> and <span class="text-slate-100">Data-Driven</span> Applications. Specializing in AI, Cloud, and modern web frameworks to create high-performance systems.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-primary text-background-dark font-bold rounded-xl hover:scale-105 transition-transform flex items-center gap-2" href="#projects">
+                            View Projects <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<button class="px-8 py-4 bg-slate-800 text-white font-bold rounded-xl border border-slate-700 hover:bg-slate-700 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">code</span> GitHub
+                        </button>
+</div>
+</div>
+<div class="relative hidden lg:flex justify-center items-center h-[500px]">
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+<div class="grid grid-cols-3 gap-6 relative z-10">
+<div class="size-20 bg-background-dark border border-primary/30 rounded-2xl flex items-center justify-center text-primary shadow-2xl">
+<span class="material-symbols-outlined text-4xl">terminal</span>
+</div>
+<div class="size-20 translate-y-8 bg-background-dark border border-secondary/30 rounded-2xl flex items-center justify-center text-secondary shadow-2xl">
+<span class="material-symbols-outlined text-4xl">psychology</span>
+</div>
+<div class="size-20 bg-background-dark border border-primary/30 rounded-2xl flex items-center justify-center text-primary shadow-2xl">
+<span class="material-symbols-outlined text-4xl">cloud</span>
+</div>
+<div class="size-20 -translate-x-4 bg-background-dark border border-primary/30 rounded-2xl flex items-center justify-center text-primary shadow-2xl">
+<span class="material-symbols-outlined text-4xl">database</span>
+</div>
+<div class="size-20 translate-y-4 bg-background-dark border border-primary/30 rounded-2xl flex items-center justify-center text-primary shadow-2xl">
+<span class="material-symbols-outlined text-4xl">hub</span>
+</div>
+<div class="size-20 translate-x-4 bg-background-dark border border-secondary/30 rounded-2xl flex items-center justify-center text-secondary shadow-2xl">
+<span class="material-symbols-outlined text-4xl">auto_awesome</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-20 border-t border-slate-800/50" id="about">
+<div class="grid md:grid-cols-3 gap-12">
+<div class="md:col-span-1">
+<h2 class="text-3xl font-bold mb-4">About Me</h2>
+<div class="h-1 w-12 bg-primary"></div>
+</div>
+<div class="md:col-span-2 text-lg text-slate-400 leading-relaxed space-y-6">
+<p>
+                            I architect scalable full-stack systems with a focus on machine learning integration. My approach combines the robustness of <span class="text-primary font-medium">Python backends</span> with modern frontend aesthetics.
+                        </p>
+<p>
+                            A frequent participant in national hackathons, I thrive on solving complex problems under pressure. I am particularly passionate about <span class="text-secondary font-medium">AI-powered workflows</span>, automated business systems, and cloud-native solutions.
+                        </p>
+</div>
+</div>
+</section>
+<!-- AI-Augmented Dev Section -->
+<section class="py-20">
+<h3 class="text-center text-sm font-bold uppercase tracking-[0.3em] text-slate-500 mb-12">AI-Augmented Development</h3>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-6 bg-slate-900/40 border border-slate-800 rounded-2xl hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">smart_toy</span>
+<h4 class="text-xl font-bold mb-2">AI Assisted Dev</h4>
+<p class="text-sm text-slate-400">Leveraging LLMs for rapid prototyping and complex logic architecting.</p>
+</div>
+<div class="p-6 bg-slate-900/40 border border-slate-800 rounded-2xl hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-secondary mb-4 text-3xl">prompt_suggestion</span>
+<h4 class="text-xl font-bold mb-2">Prompt Engineering</h4>
+<p class="text-sm text-slate-400">Crafting precise contexts for consistent and high-quality AI outputs.</p>
+</div>
+<div class="p-6 bg-slate-900/40 border border-slate-800 rounded-2xl hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">dataset</span>
+<h4 class="text-xl font-bold mb-2">Data-Driven Apps</h4>
+<p class="text-sm text-slate-400">Building analytics-first applications with intuitive data visualization.</p>
+</div>
+<div class="p-6 bg-slate-900/40 border border-slate-800 rounded-2xl hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-secondary mb-4 text-3xl">bolt</span>
+<h4 class="text-xl font-bold mb-2">Automation</h4>
+<p class="text-sm text-slate-400">Streamlining workflows using Python scripts and cloud functions.</p>
+</div>
+</div>
+</section>
+<!-- Tech Stack -->
+<section class="py-20 border-t border-slate-800/50" id="stack">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black mb-4">Tech Stack</h2>
+<p class="text-slate-400">The tools and technologies I use to bring ideas to life.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+<div class="space-y-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-primary">Languages</h5>
+<ul class="space-y-2 text-slate-400 font-mono text-sm">
+<li class="flex items-center gap-2"><span class="size-1.5 bg-secondary rounded-full"></span> Python</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> JavaScript</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> Java</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> C</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-primary">Backend</h5>
+<ul class="space-y-2 text-slate-400 font-mono text-sm">
+<li class="flex items-center gap-2"><span class="size-1.5 bg-secondary rounded-full"></span> Flask</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> RESTful APIs</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> RBAC Security</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-primary">Databases</h5>
+<ul class="space-y-2 text-slate-400 font-mono text-sm">
+<li class="flex items-center gap-2"><span class="size-1.5 bg-secondary rounded-full"></span> SQLite</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> MongoDB</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> Redis</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-primary">ML / Data</h5>
+<ul class="space-y-2 text-slate-400 font-mono text-sm">
+<li class="flex items-center gap-2"><span class="size-1.5 bg-secondary rounded-full"></span> Pandas</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> Scikit-learn</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> NumPy</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-primary">Cloud</h5>
+<ul class="space-y-2 text-slate-400 font-mono text-sm">
+<li class="flex items-center gap-2"><span class="size-1.5 bg-secondary rounded-full"></span> GCP</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> Vercel</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> Docker</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-primary">Tools</h5>
+<ul class="space-y-2 text-slate-400 font-mono text-sm">
+<li class="flex items-center gap-2"><span class="size-1.5 bg-secondary rounded-full"></span> Git / GitHub</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> Postman</li>
+<li class="flex items-center gap-2"><span class="size-1.5 bg-slate-700 rounded-full"></span> Notion</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Projects -->
+<section class="py-20" id="projects">
+<h2 class="text-4xl font-black mb-12">Selected Projects</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="group bg-slate-900/50 border border-slate-800 rounded-3xl overflow-hidden hover:border-primary/50 transition-all flex flex-col">
+<div class="aspect-video w-full bg-slate-800 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-white/20">train</span>
+</div>
+</div>
+<div class="p-8 space-y-4 flex-1 flex flex-col">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase">Flask</span>
+<span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase">Python</span>
+<span class="px-2 py-1 rounded-md bg-secondary/10 text-secondary text-[10px] font-bold uppercase">QR Auth</span>
+</div>
+<h3 class="text-2xl font-bold">Railway Ticket Booking System</h3>
+<p class="text-slate-400 text-sm leading-relaxed flex-1">
+                                An intelligent reservation engine featuring dynamic seat allocation, encrypted QR-based ticket generation, and automated PDF invoicing.
+                            </p>
+<div class="pt-4 flex gap-4">
+<button class="flex items-center gap-2 text-sm font-bold text-primary">
+<span class="material-symbols-outlined text-lg">link</span> Live Demo
+                                </button>
+<button class="flex items-center gap-2 text-sm font-bold text-slate-400">
+<span class="material-symbols-outlined text-lg">terminal</span> Source
+                                </button>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group bg-slate-900/50 border border-slate-800 rounded-3xl overflow-hidden hover:border-primary/50 transition-all flex flex-col">
+<div class="aspect-video w-full bg-slate-800 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-primary/20 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-white/20">receipt_long</span>
+</div>
+</div>
+<div class="p-8 space-y-4 flex-1 flex flex-col">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase">Data Visualization</span>
+<span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase">Pandas</span>
+<span class="px-2 py-1 rounded-md bg-secondary/10 text-secondary text-[10px] font-bold uppercase">Reports</span>
+</div>
+<h3 class="text-2xl font-bold">Smart Invoice Generator</h3>
+<p class="text-slate-400 text-sm leading-relaxed flex-1">
+                                End-to-end billing solution with GST calculation logic, sales analytics dashboard, and batch PDF generation for small enterprises.
+                            </p>
+<div class="pt-4 flex gap-4">
+<button class="flex items-center gap-2 text-sm font-bold text-primary">
+<span class="material-symbols-outlined text-lg">link</span> Live Demo
+                                </button>
+<button class="flex items-center gap-2 text-sm font-bold text-slate-400">
+<span class="material-symbols-outlined text-lg">terminal</span> Source
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hackathons Timeline -->
+<section class="py-20 border-t border-slate-800/50" id="hackathons">
+<h2 class="text-4xl font-black mb-12">Hackathons</h2>
+<div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-800 before:to-transparent">
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-primary/50 bg-background-dark text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+<span class="material-symbols-outlined text-sm">trophy</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+<div class="flex items-center justify-between mb-1">
+<time class="font-mono text-xs text-secondary">2024</time>
+<span class="text-xs text-slate-500">DTU</span>
+</div>
+<h4 class="font-bold text-lg">Synapse.AI</h4>
+<p class="text-sm text-slate-400 mt-2">Built a multi-agent AI system for automated document classification.</p>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-800 bg-background-dark text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+<span class="material-symbols-outlined text-sm">code</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+<div class="flex items-center justify-between mb-1">
+<time class="font-mono text-xs text-secondary">2024</time>
+<span class="text-xs text-slate-500">NSUT</span>
+</div>
+<h4 class="font-bold text-lg">InnovateNSUT</h4>
+<p class="text-sm text-slate-400 mt-2">Developing a prototype for sustainable smart-city energy grids.</p>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-800 bg-background-dark text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+<span class="material-symbols-outlined text-sm">rocket</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+<div class="flex items-center justify-between mb-1">
+<time class="font-mono text-xs text-secondary">2023</time>
+<span class="text-xs text-slate-500">PW</span>
+</div>
+<h4 class="font-bold text-lg">RIFT Hackathon</h4>
+<p class="text-sm text-slate-400 mt-2">Optimized e-learning algorithms for personalized student paths.</p>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-800 bg-background-dark text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+<span class="material-symbols-outlined text-sm">database</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+<div class="flex items-center justify-between mb-1">
+<time class="font-mono text-xs text-secondary">2023</time>
+<span class="text-xs text-slate-500">KIET</span>
+</div>
+<h4 class="font-bold text-lg">DataVerse</h4>
+<p class="text-sm text-slate-400 mt-2">Finalist: Predicative model for urban traffic congestion analysis.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- GitHub Activity -->
+<section class="py-20">
+<div class="bg-slate-900/30 border border-slate-800 rounded-3xl p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+<div>
+<h3 class="text-2xl font-bold">Open Source Contribution</h3>
+<p class="text-slate-400 text-sm">GitHub activity and repository statistics</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-center">
+<div class="text-2xl font-mono font-bold text-primary">1.2k+</div>
+<div class="text-[10px] uppercase text-slate-500 font-bold">Commits</div>
+</div>
+<div class="text-center border-l border-slate-800 pl-6">
+<div class="text-2xl font-mono font-bold text-secondary">48</div>
+<div class="text-[10px] uppercase text-slate-500 font-bold">Repos</div>
+</div>
+</div>
+</div>
+<div class="w-full overflow-hidden">
+<div class="grid grid-cols-12 gap-2">
+<!-- Placeholder for Heatmap -->
+<div class="col-span-12 h-32 bg-slate-800/50 rounded-lg flex items-end p-4 gap-1">
+<div class="flex-1 bg-slate-700 h-2 rounded-full"></div>
+<div class="flex-1 bg-primary/40 h-8 rounded-full"></div>
+<div class="flex-1 bg-slate-700 h-4 rounded-full"></div>
+<div class="flex-1 bg-secondary/60 h-12 rounded-full"></div>
+<div class="flex-1 bg-primary/80 h-16 rounded-full"></div>
+<div class="flex-1 bg-slate-700 h-6 rounded-full"></div>
+<div class="flex-1 bg-slate-700 h-4 rounded-full"></div>
+<div class="flex-1 bg-secondary/80 h-20 rounded-full"></div>
+<div class="flex-1 bg-primary h-24 rounded-full shadow-[0_0_15px_rgba(79,156,249,0.3)]"></div>
+<div class="flex-1 bg-slate-700 h-10 rounded-full"></div>
+<div class="flex-1 bg-slate-700 h-6 rounded-full"></div>
+<div class="flex-1 bg-secondary h-16 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Terminal Section -->
+<section class="py-20">
+<div class="terminal-shadow bg-[#0B0F19] border border-slate-800 rounded-xl overflow-hidden font-mono text-sm">
+<div class="bg-slate-800/50 px-4 py-2 flex items-center justify-between">
+<div class="flex gap-1.5">
+<div class="size-3 bg-[#FF5F56] rounded-full"></div>
+<div class="size-3 bg-[#FFBD2E] rounded-full"></div>
+<div class="size-3 bg-[#27C93F] rounded-full"></div>
+</div>
+<span class="text-xs text-slate-500">bash — 80x24</span>
+<div class="w-10"></div>
+</div>
+<div class="p-6 space-y-4">
+<div class="flex gap-2">
+<span class="text-secondary">rishabh@portfolio:~$</span>
+<span class="text-slate-300">whoami</span>
+</div>
+<div class="text-slate-400 pl-4">
+                            "Rishabh Mishra: A developer dedicated to engineering efficient, scalable backend services with a pinch of AI magic."
+                        </div>
+<div class="flex gap-2">
+<span class="text-secondary">rishabh@portfolio:~$</span>
+<span class="text-slate-300">ls skills/</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-slate-400 pl-4">
+<span>python_core</span>
+<span>flask_api</span>
+<span>pandas_ml</span>
+<span>gcp_cloud</span>
+<span>jwt_auth</span>
+<span>sql_db</span>
+</div>
+<div class="flex gap-2">
+<span class="text-secondary">rishabh@portfolio:~$</span>
+<span class="text-slate-300">cat goals.txt</span>
+</div>
+<div class="text-primary pl-4 animate-pulse">
+                            Building the future of automated intelligent systems...
+                        </div>
+<div class="flex gap-2">
+<span class="text-secondary">rishabh@portfolio:~$</span>
+<span class="border-l-2 border-primary h-5 animate-blink ml-1"></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 border-t border-slate-800/50 text-center" id="contact">
+<h2 class="text-5xl lg:text-7xl font-black mb-8">Let's Connect</h2>
+<p class="text-slate-400 max-w-xl mx-auto mb-12">
+                    Looking for a developer who understands the intersection of AI and scalable architecture? Reach out for collaborations or just a chat.
+                </p>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="p-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-primary transition-colors flex items-center gap-3" href="mailto:hello@rishabh.dev">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-bold">Email</span>
+</a>
+<a class="p-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-primary transition-colors flex items-center gap-3" href="#">
+<span class="material-symbols-outlined text-primary">link</span>
+<span class="font-bold">LinkedIn</span>
+</a>
+<a class="p-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-primary transition-colors flex items-center gap-3" href="#">
+<span class="material-symbols-outlined text-primary">terminal</span>
+<span class="font-bold">GitHub</span>
+</a>
+</div>
+</section>
+</main>
+<footer class="py-10 border-t border-slate-800/50 bg-background-dark">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-2">
+<div class="size-6 bg-primary rounded flex items-center justify-center text-[10px] text-background-dark font-black">R</div>
+<span class="text-slate-500 text-sm font-medium">© 2024 Rishabh Mishra. All rights reserved.</span>
+</div>
+<div class="flex items-center gap-6 text-slate-500 text-sm">
+<a class="hover:text-white" href="#">Privacy</a>
+<a class="hover:text-white" href="#">Terminal.js</a>
+<a class="hover:text-white" href="#">Built with Passion</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
