@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react";
 
 const links = [
-  { icon: Mail, label: "Email", value: "hello@rishabhmishra.me", href: "mailto:hello@rishabhmishra.me", color: "#4F9CF9" },
+  { icon: Mail, label: "Email", value: "rishabhmishra0510@gmail.com", href: "mailto:rishabhmishra0510@gmail.com", color: "#4F9CF9" },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/rishabh-mishra", href: "https://linkedin.com/in/rishabh-mishra", color: "#00FFC6" },
   { icon: Github, label: "GitHub", value: "github.com/rishabhmishra", href: "https://github.com/rishabhmishra", color: "#4F9CF9" },
 ];

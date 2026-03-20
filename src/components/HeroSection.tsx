@@ -54,7 +54,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-3"
           >
-            <div className="text-2xl font-bold flex items-center gap-2">
+            <div className="text-xl sm:text-2xl font-bold flex flex-wrap items-center gap-2">
               <span className="text-white/90">AI-Augmented</span>
               <span className="text-[#4F9CF9] bg-[#4F9CF9]/10 px-3 py-1 rounded-lg border border-[#4F9CF9]/20">Full-Stack</span>
               <span className="text-white/90">Developer</span>

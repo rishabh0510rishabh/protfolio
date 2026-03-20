@@ -62,7 +62,7 @@ export default function GithubSection() {
   }, []);
 
   return (
-    <section className="py-28 relative">
+    <section id="github" className="py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="mb-12"
@@ -103,15 +103,17 @@ export default function GithubSection() {
           </div>
 
           {/* GitHub Contribution Graph via img (real) */}
-          <div className="mb-8 overflow-hidden rounded-xl bg-slate-900/50 p-4">
-            <img
-              src={`https://ghchart.rshah.org/4F9CF9/${GITHUB_USERNAME}`}
-              alt="GitHub contribution graph"
-              className="w-full h-auto opacity-80 hover:opacity-100 transition-opacity"
-              loading="lazy"
-            />
-            <p className="text-[10px] text-slate-600 text-right mt-2 font-mono">
-              Contribution graph powered by ghchart
+          <div className="mb-8 overflow-x-auto rounded-xl bg-slate-900/50 p-4 scrollbar-thin">
+            <div className="min-w-[800px] md:min-w-0">
+              <img
+                src={`https://ghchart.rshah.org/4F9CF9/${GITHUB_USERNAME}`}
+                alt="GitHub contribution graph"
+                className="w-full h-auto opacity-80 hover:opacity-100 transition-opacity"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-[10px] text-slate-600 text-right mt-2 font-mono whitespace-nowrap">
+              Contribution graph powered by ghchart • Scroll to see full year
             </p>
           </div>
 
