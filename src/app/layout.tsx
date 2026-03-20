@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Rishabh Mishra Portfolio",
     images: [
       {
-        url: "/og-image.png", // Ensure this exists or I'll generate one
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Rishabh Mishra Portfolio",
@@ -49,7 +50,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
